@@ -2,8 +2,8 @@
 header('Content-Type: application/json');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = $_POST['username'] ?? '';
-    $password = $_POST['password'] ?? '';
+    $username = $_POST['nombreUsuario'] ?? '';
+    $password = $_POST['clave'] ?? '';
 
     if (!empty($usuario) && !empty($clave)) {
         // Aquí podrías validar contra una base de datos
